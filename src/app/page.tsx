@@ -1,6 +1,7 @@
 import {
   AboutUs,
   Contact,
+  Demo,
   Footer,
   Hero,
   Navbar,
@@ -14,6 +15,9 @@ export default function Home() {
         <Navbar />
         <Hero />
         <AboutUs />
+      </div>
+      <Demo />
+      <div className="container">
         <PricingPlans />
         <Contact />
         <Footer />

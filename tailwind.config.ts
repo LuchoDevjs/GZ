@@ -23,7 +23,7 @@ const config = {
     },
     container: {
       center: true,
-      padding: "6rem",
+      padding: "3rem",
       screens: {
         desktop: "1440px",
       },
