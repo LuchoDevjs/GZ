@@ -1,11 +1,12 @@
 import { Splash } from "..";
+import { DemoSplashRed, DemoSplashWhite } from ".";
 
 export const Demo = () => {
   return (
-    <section className="h-[300px] lg:h-[512px] bg-primary flex flex-col justify-center items-center gap-9 relative">
+    <section className="h-[300px] lg:h-[512px] bg-primary flex flex-col justify-center items-center gap-9 relative mb-24">
       <Splash
-        src="/assets/splashes/splash4.png"
-        alt="splash4"
+        src={DemoSplashRed}
+        alt="Splash Red"
         className="top-0 left-0 lg:w-[30vw]"
         style={{
           maskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",
@@ -17,8 +18,8 @@ export const Demo = () => {
       </h1>
       <button className="btn">Ver demo</button>
       <Splash
-        src="/assets/splashes/splash5.png"
-        alt="splash4"
+        src={DemoSplashWhite}
+        alt="Splash White"
         className="bottom-0 right-0 lg:w-[30vw]"
         style={{
           maskImage: "linear-gradient(to top, black 80%, transparent 100%)",

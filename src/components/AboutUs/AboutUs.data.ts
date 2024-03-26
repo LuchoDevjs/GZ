@@ -1,3 +1,9 @@
+import AboutSplashBurgundy from "../../../public/assets/splashes/AboutUs/splash-burgundy-about.png";
+import AboutSplashOrange from "../../../public/assets/splashes/AboutUs/splash-orange-about.png";
+import AboutSplashRed from "../../../public/assets/splashes/AboutUs/splash-red-about.png";
+
+export { AboutSplashBurgundy, AboutSplashOrange, AboutSplashRed };
+
 export const dataAboutUs = [
   {
     id: "1",

@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface SplashProps {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   className: string;
   style?: React.CSSProperties;
