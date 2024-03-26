@@ -20,8 +20,8 @@ export default function Home() {
       <div className="container">
         <PricingPlans />
         <Contact />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

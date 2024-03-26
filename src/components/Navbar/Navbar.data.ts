@@ -6,7 +6,7 @@ export const dataNavbar = [
   },
   {
     id: "2",
-    item: "Undefined",
+    item: "Proyectos",
     link: "#",
   },
   {
@@ -16,7 +16,7 @@ export const dataNavbar = [
   },
   {
     id: "4",
-    item: "Proyectos",
+    item: "Paquetes",
     link: "#",
   },
   {

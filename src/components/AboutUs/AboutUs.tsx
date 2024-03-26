@@ -1,16 +1,30 @@
+import Image from "next/image";
 import { Splash } from "..";
 import {
   AboutSplashBurgundy,
   AboutSplashOrange,
   AboutSplashRed,
+  IconBrush,
+  IconLaptop,
+  IconPerson,
   dataAboutUs,
 } from "./AboutUs.data";
+
+const icons = [
+  { id: "1", icon: IconLaptop, alt: "Icon Laptop" },
+  { id: "2", icon: IconBrush, alt: "Icon Brush" },
+  { id: "3", icon: IconPerson, alt: "Icon Person" },
+];
 
 export const AboutUs = () => {
   return (
     <section className="mb-24 relative">
       <div>
-        <h1 className="text-center text-2xl mb-10">Nosotros</h1>
+        <div className="flex flex-row gap-3 justify-center mb-10">
+          {icons.map(({ id, icon, alt }) => (
+            <Image key={id} src={icon} alt={alt} width={30} height={30} />
+          ))}
+        </div>
       </div>
       <Splash
         src={AboutSplashBurgundy}

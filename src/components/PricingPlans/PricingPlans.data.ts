@@ -22,29 +22,71 @@ export const dataPricings = [
     plan: "Básico",
     price: "99",
     description: "para rellenar con una pequeña sentencia",
-    itemA: "text",
-    itemB: "text",
-    itemC: "text",
-    itemD: "text",
+    items: [
+      {
+        id: "1",
+        item: "textA",
+      },
+      {
+        id: "2",
+        item: "textB",
+      },
+      {
+        id: "3",
+        item: "textC",
+      },
+      {
+        id: "4",
+        item: "textD",
+      },
+    ],
   },
   {
     id: "2",
     plan: "Básico",
     price: "99",
     description: "para rellenar con una pequeña sentencia",
-    itemA: "text",
-    itemB: "text",
-    itemC: "text",
-    itemD: "text",
+    items: [
+      {
+        id: "1",
+        item: "textA",
+      },
+      {
+        id: "2",
+        item: "textB",
+      },
+      {
+        id: "3",
+        item: "textC",
+      },
+      {
+        id: "4",
+        item: "textD",
+      },
+    ],
   },
   {
     id: "3",
     plan: "Básico",
     price: "99",
     description: "para rellenar con una pequeña sentencia",
-    itemA: "text",
-    itemB: "text",
-    itemC: "text",
-    itemD: "text",
+    items: [
+      {
+        id: "1",
+        item: "textA",
+      },
+      {
+        id: "2",
+        item: "textB",
+      },
+      {
+        id: "3",
+        item: "textC",
+      },
+      {
+        id: "4",
+        item: "textD",
+      },
+    ],
   },
 ];

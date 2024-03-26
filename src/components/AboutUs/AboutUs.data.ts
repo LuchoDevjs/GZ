@@ -4,6 +4,12 @@ import AboutSplashRed from "../../../public/assets/splashes/AboutUs/splash-red-a
 
 export { AboutSplashBurgundy, AboutSplashOrange, AboutSplashRed };
 
+import IconBrush from "../../../public/assets/splashes/AboutUs/icon-brush.svg";
+import IconLaptop from "../../../public/assets/splashes/AboutUs/icon-laptop.svg";
+import IconPerson from "../../../public/assets/splashes/AboutUs/icon-person.svg";
+
+export { IconBrush, IconLaptop, IconPerson };
+
 export const dataAboutUs = [
   {
     id: "1",
