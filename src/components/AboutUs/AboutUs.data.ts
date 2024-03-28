@@ -1,14 +1,24 @@
-import AboutSplashBurgundy from "../../../public/assets/splashes/AboutUs/splash-burgundy-about.png";
-import AboutSplashOrange from "../../../public/assets/splashes/AboutUs/splash-orange-about.png";
-import AboutSplashRed from "../../../public/assets/splashes/AboutUs/splash-red-about.png";
+import AboutSplashBurgundy from "../../../public/assets/AboutUs/splash-burgundy-about.png";
+import AboutSplashOrange from "../../../public/assets/AboutUs/splash-orange-about.png";
+import AboutSplashRed from "../../../public/assets/AboutUs/splash-red-about.png";
 
-export { AboutSplashBurgundy, AboutSplashOrange, AboutSplashRed };
+import IconBrush from "../../../public/assets/AboutUs/icon-brush.svg";
+import IconLaptop from "../../../public/assets/AboutUs/icon-laptop.svg";
+import IconPerson from "../../../public/assets/AboutUs/icon-person.svg";
 
-import IconBrush from "../../../public/assets/splashes/AboutUs/icon-brush.svg";
-import IconLaptop from "../../../public/assets/splashes/AboutUs/icon-laptop.svg";
-import IconPerson from "../../../public/assets/splashes/AboutUs/icon-person.svg";
+import TomasMaldocena from "../../../public/assets/AboutUs/TomasMaldocena.svg";
+import LucianoGonzalez from "../../../public/assets/AboutUs/LucianoGonzalez.svg";
 
-export { IconBrush, IconLaptop, IconPerson };
+export {
+  AboutSplashBurgundy,
+  AboutSplashOrange,
+  AboutSplashRed,
+  IconBrush,
+  IconLaptop,
+  IconPerson,
+  TomasMaldocena,
+  LucianoGonzalez,
+};
 
 export const dataAboutUs = [
   {
@@ -34,5 +44,42 @@ export const dataAboutUs = [
     title: "Soporte Integral 24/7",
     description:
       "Nuestro compromiso no termina con la entrega del proyecto. Nos  enorgullecemos de ofrecer un soporte integral a nuestros clientes,  brindando asistencia continua para garantizar que sus diseños y estrategias sigan siendo efectivos a medida que evolucionan sus necesidades.",
+  },
+];
+
+export const firstInformation = [
+  {
+    id: "1",
+    text: "En [Nombre], nos apasiona no solo crear diseños visuales impactantes, sino también construir relaciones sólidas con nuestros clientes. Desde nuestra fundación, nos hemos comprometido a ofrecer soluciones de diseño web y branding que no solo satisfagan las necesidades de nuestros clientes, sino que también superen sus expectativas.",
+  },
+  {
+    id: "2",
+    text: "  Lo que nos distingue es nuestro enfoque centrado en el cliente. Creemos en la comunicación abierta y transparente en todas las etapas del proceso, desde la consulta inicial hasta la entrega final. Nos esforzamos por construir relaciones a largo plazo con cada cliente, basadas en la confianza mutua y el éxito compartido.",
+  },
+];
+
+export const secondInformation = [
+  {
+    id: "1",
+    text: "Nos esforzamos por superar las expectativas de nuestros clientes en cada proyecto que emprendemos.",
+  },
+  {
+    id: "2",
+    text: "   En el corazón de nuestro trabajo está el amor por el diseño y la creatividad. Además del buen gusto para llamar la atención de los usuarios.",
+  },
+];
+
+export const members = [
+  {
+    id: "1",
+    name: "Tomás Maldocena",
+    role: "Diseñador",
+    image: TomasMaldocena,
+  },
+  {
+    id: "2",
+    name: "Luciano González",
+    role: "Desarrollador",
+    image: LucianoGonzalez,
   },
 ];

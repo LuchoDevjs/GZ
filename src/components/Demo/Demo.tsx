@@ -3,7 +3,10 @@ import { DemoSplashRed, DemoSplashWhite } from ".";
 
 export const Demo = () => {
   return (
-    <section className="h-[300px] lg:h-[512px] bg-primary flex flex-col justify-center items-center gap-9 relative mb-24">
+    <section
+      className="h-[300px] lg:h-[512px] bg-primary flex flex-col justify-center items-center gap-9 relative mb-24"
+      id="demo"
+    >
       <Splash
         src={DemoSplashRed}
         alt="Splash Red"

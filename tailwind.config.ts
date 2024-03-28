@@ -17,16 +17,12 @@ const config = {
         secondary: "#D1274B",
         accent: "#F88020",
       },
+      width: {
+        custom: "80%",
+      },
     },
     fontFamily: {
       geist: ['"Geist Sans"', "sans-serif"],
-    },
-    container: {
-      center: true,
-      padding: "6rem",
-      screens: {
-        desktop: "1440px",
-      },
     },
   },
   plugins: [require("tailwindcss-animate")],

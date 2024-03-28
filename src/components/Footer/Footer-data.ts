@@ -1,6 +1,6 @@
-import FooterSplashOrange from "../../../public/assets/splashes/Footer/splash-orange-footer.png";
-import FooterSplashRed from "../../../public/assets/splashes/Footer/splash-red-footer.png";
-import FooterSplashWhite from "../../../public/assets/splashes/Footer/splash-white-footer.png";
+import FooterSplashOrange from "../../../public/assets/Footer/splash-orange-footer.png";
+import FooterSplashRed from "../../../public/assets/Footer/splash-red-footer.png";
+import FooterSplashWhite from "../../../public/assets/Footer/splash-white-footer.png";
 
 export { FooterSplashOrange, FooterSplashRed, FooterSplashWhite };
 

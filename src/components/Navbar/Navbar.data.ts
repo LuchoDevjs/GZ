@@ -2,12 +2,12 @@ export const dataNavbar = [
   {
     id: "1",
     item: "Nosotros",
-    link: "#",
+    link: "#aboutus",
   },
   {
     id: "2",
-    item: "Proyectos",
-    link: "#",
+    item: "Demo",
+    link: "#demo",
   },
   {
     id: "3",
@@ -17,11 +17,11 @@ export const dataNavbar = [
   {
     id: "4",
     item: "Paquetes",
-    link: "#",
+    link: "#packages",
   },
   {
     id: "5",
     item: "Contacto",
-    link: "#",
+    link: "#contact",
   },
 ];

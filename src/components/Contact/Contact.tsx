@@ -45,7 +45,10 @@ export const Contact = () => {
   }
 
   return (
-    <section className="flex flex-col lg:flex-row mb-24 border border-[#FFF4E499] rounded-2xl h-full bg-[#FFF4E473]">
+    <section
+      className="flex flex-col lg:flex-row mb-24 border border-[#FFF4E499] rounded-2xl h-full bg-[#FFF4E473]"
+      id="contact"
+    >
       <div className="flex-1 rounded-s-2xl p-10">
         <h1 className="text-5xl font-extralight mb-5">Hablamos?</h1>
         <p className="mb-4">
