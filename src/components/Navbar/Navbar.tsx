@@ -10,7 +10,7 @@ export const Navbar = () => {
           {id === "3" ? (
             <Image src={item} alt="Logo" height={100} width={100} />
           ) : (
-            item
+            <p className="hover:text-secondary">{item}</p>
           )}
         </Link>
       ))}

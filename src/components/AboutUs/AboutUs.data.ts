@@ -1,6 +1,13 @@
-import AboutSplashBurgundy from "../../../public/assets/AboutUs/splash-burgundy-about.png";
-import AboutSplashOrange from "../../../public/assets/AboutUs/splash-orange-about.png";
-import AboutSplashRed from "../../../public/assets/AboutUs/splash-red-about.png";
+import OverviewSplashOrange1 from "../../../public/assets/AboutUs/splash-orange-1-overview.png";
+import OverviewSplashOrange2 from "../../../public/assets/AboutUs/splash-orange-2-overview.png";
+import OverviewSplashOrange3 from "../../../public/assets/AboutUs/splash-orange-3-overview.png";
+import OverviewSplashOrange4 from "../../../public/assets/AboutUs/splash-orange-4-overview.png";
+import OverviewSplashOrange5 from "../../../public/assets/AboutUs/splash-orange-5-overview.png";
+import OverviewSplashRed1 from "../../../public/assets/AboutUs/splash-red-1-overview.png";
+
+import FeaturesSplashBurgundy from "../../../public/assets/AboutUs/splash-burgundy-features.png";
+import FeaturesSplashOrange from "../../../public/assets/AboutUs/splash-orange-features.png";
+import FeaturesSplashRed from "../../../public/assets/AboutUs/splash-red-features.png";
 
 import IconBrush from "../../../public/assets/AboutUs/icon-brush.svg";
 import IconLaptop from "../../../public/assets/AboutUs/icon-laptop.svg";
@@ -10,9 +17,15 @@ import TomasMaldocena from "../../../public/assets/AboutUs/TomasMaldocena.svg";
 import LucianoGonzalez from "../../../public/assets/AboutUs/LucianoGonzalez.svg";
 
 export {
-  AboutSplashBurgundy,
-  AboutSplashOrange,
-  AboutSplashRed,
+  OverviewSplashOrange1,
+  OverviewSplashOrange2,
+  OverviewSplashOrange3,
+  OverviewSplashOrange4,
+  OverviewSplashOrange5,
+  OverviewSplashRed1,
+  FeaturesSplashBurgundy,
+  FeaturesSplashOrange,
+  FeaturesSplashRed,
   IconBrush,
   IconLaptop,
   IconPerson,

@@ -8,21 +8,26 @@ export const dataFooter = [
   {
     id: "1",
     text: "Inicio",
-    link: "#",
+    link: "#/",
   },
   {
     id: "2",
     text: "Sobre Nosotros",
-    link: "#",
+    link: "#aboutus",
   },
   {
     id: "3",
-    text: "Proyectos",
-    link: "#",
+    text: "Demo",
+    link: "#demo",
   },
   {
     id: "4",
     text: "Paquetes",
-    link: "#",
+    link: "#packages",
+  },
+  {
+    id: "5",
+    text: "Contacto",
+    link: "#contact",
   },
 ];

@@ -23,7 +23,7 @@ export const dataCard = [
     text: "text-[#FFF4E499]",
     bg: "bg-[#FFF4E499]",
     bgButton: "bg-custom-bg",
-    textButton: "text-secondary",
+    textButton: "text-primary",
     borderButton: "border-[#3D0E1E99]",
     plan: "Básico",
     price: "99",

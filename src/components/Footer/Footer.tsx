@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { dataFooter } from ".";
+import { FooterSplashes, dataFooter } from ".";
 
 export const Footer = () => {
   return (
-    <section className="bg-primary">
-      <section className="flex flex-row justify-between items-center lg:h-[444px] w-custom mx-auto">
+    <section className="bg-primary relative">
+      <FooterSplashes />
+      <section className="flex flex-row justify-between items-center lg:h-[444px] w-custom mx-auto z-10 relative">
         <div className="max-w-[479px]">
           <h1 className="text-custom-bg mb-5">Logo</h1>
           <p className="text-custom-bg">
@@ -16,7 +17,11 @@ export const Footer = () => {
         <div className="flex flex-col">
           <h2 className="text-accent mb-6 text-lg font-bold">Links</h2>
           {dataFooter.map(({ id, text, link }) => (
-            <Link key={id} href={link} className="text-custom-bg mb-3">
+            <Link
+              key={id}
+              href={link}
+              className="text-custom-bg mb-3 hover:text-[#cbc3b7]"
+            >
               {text}
             </Link>
           ))}

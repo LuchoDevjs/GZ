@@ -7,9 +7,13 @@ html {
 }
 
 body {
-  @apply bg-custom-bg text-primary font-geist;
+  @apply bg-custom-bg text-primary font-geist overflow-x-hidden;
 }
 
 .btn {
-  @apply bg-secondary text-custom-bg rounded-[4px] py-2 px-6 lg:px-9;
+  @apply bg-secondary text-custom-bg rounded-[4px] py-2 px-6 lg:px-9 font-extralight hover:bg-[#de3357];
+}
+
+.hover\:text-secondary:hover {
+  @apply transition-colors duration-300 ease-in-out;
 }
