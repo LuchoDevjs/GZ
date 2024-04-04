@@ -7,13 +7,27 @@ html {
 }
 
 body {
-  @apply bg-custom-bg text-primary font-geist overflow-x-hidden;
+  @apply bg-custom-bg text-primary font-geist;
 }
 
+::selection {
+  background: #6de4e8;
+}
+
+.degradedBlue {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 5px 0;
+}
 .btn {
-  @apply bg-secondary text-custom-bg rounded-[4px] py-2 px-6 lg:px-9 font-extralight hover:bg-[#de3357];
+  @apply bg-secondary text-primary rounded-full py-2 px-6 lg:px-9 font-normal hover:bg-[#0070f0d7] transition-hover;
 }
 
-.hover\:text-secondary:hover {
-  @apply transition-colors duration-300 ease-in-out;
+.transition-hover {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+li {
+  @apply text-[#ffecd7d4] bg-[#fffdfd];
 }

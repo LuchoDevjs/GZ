@@ -16,7 +16,7 @@ export default function Home() {
         <Hero />
         <AboutUs />
       </div>
-      <Demo />
+      {/* <Demo /> */}
       <div className="w-custom mx-auto">
         <PricingPlans />
         <Contact />

@@ -24,7 +24,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="fixed h-full w-full bg-black z-[-1]">
+          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+          <div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div>
+        </div>
+        {/* <div className="fixed h-full w-full">
+          <div className="absolute inset-0 bg-secondary bg-[size:20px_20px] opacity-20 blur-[100px]"></div>
+        </div> */}
+        {/* <div className="fixed top-0 z-[-2] h-screen w-screen bg-[radial-gradient(100%_50%_at_50%_0%,rgba(209,39,75,0.5)_0,rgba(209,39,75,0)_50%,rgba(209,39,75,0)_100%)]"></div> */}
+
+        {/* <div className="fixed top-0 -z-10 h-full w-full">
+          {" "}
+          <div className="absolute bottom-auto left-auto right-0 top-0 h-[650px] w-[650px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(209,39,75,0.5)] opacity-50 blur-[80px]"></div>
+          <div className="absolute bottom-auto right-auto left-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(209,39,75,0.5)] opacity-50 blur-[80px]"></div>
+        </div> */}
+        {children}
+      </body>
     </html>
   );
 }

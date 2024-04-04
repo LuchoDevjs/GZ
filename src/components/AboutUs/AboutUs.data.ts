@@ -1,37 +1,10 @@
-import OverviewSplashOrange1 from "../../../public/assets/AboutUs/splash-orange-1-overview.png";
-import OverviewSplashOrange2 from "../../../public/assets/AboutUs/splash-orange-2-overview.png";
-import OverviewSplashOrange3 from "../../../public/assets/AboutUs/splash-orange-3-overview.png";
-import OverviewSplashOrange4 from "../../../public/assets/AboutUs/splash-orange-4-overview.png";
-import OverviewSplashOrange5 from "../../../public/assets/AboutUs/splash-orange-5-overview.png";
-import OverviewSplashRed1 from "../../../public/assets/AboutUs/splash-red-1-overview.png";
-
-import FeaturesSplashBurgundy from "../../../public/assets/AboutUs/splash-burgundy-features.png";
-import FeaturesSplashOrange from "../../../public/assets/AboutUs/splash-orange-features.png";
-import FeaturesSplashRed from "../../../public/assets/AboutUs/splash-red-features.png";
-
 import IconBrush from "../../../public/assets/AboutUs/icon-brush.svg";
 import IconLaptop from "../../../public/assets/AboutUs/icon-laptop.svg";
 import IconPerson from "../../../public/assets/AboutUs/icon-person.svg";
 
-import TomasMaldocena from "../../../public/assets/AboutUs/TomasMaldocena.svg";
 import LucianoGonzalez from "../../../public/assets/AboutUs/LucianoGonzalez.svg";
 
-export {
-  OverviewSplashOrange1,
-  OverviewSplashOrange2,
-  OverviewSplashOrange3,
-  OverviewSplashOrange4,
-  OverviewSplashOrange5,
-  OverviewSplashRed1,
-  FeaturesSplashBurgundy,
-  FeaturesSplashOrange,
-  FeaturesSplashRed,
-  IconBrush,
-  IconLaptop,
-  IconPerson,
-  TomasMaldocena,
-  LucianoGonzalez,
-};
+export { IconBrush, IconLaptop, IconPerson, LucianoGonzalez };
 
 export const dataAboutUs = [
   {
@@ -63,7 +36,7 @@ export const dataAboutUs = [
 export const firstInformation = [
   {
     id: "1",
-    text: "En [Nombre], nos apasiona no solo crear diseños visuales impactantes, sino también construir relaciones sólidas con nuestros clientes. Desde nuestra fundación, nos hemos comprometido a ofrecer soluciones de diseño web y branding que no solo satisfagan las necesidades de nuestros clientes, sino que también superen sus expectativas.",
+    text: "En DevSign, nos apasiona no solo crear diseños visuales impactantes, sino también construir relaciones sólidas con nuestros clientes. Desde nuestra fundación, nos hemos comprometido a ofrecer soluciones de diseño web y branding que no solo satisfagan las necesidades de nuestros clientes, sino que también superen sus expectativas.",
   },
   {
     id: "2",
@@ -85,12 +58,6 @@ export const secondInformation = [
 export const members = [
   {
     id: "1",
-    name: "Tomás Maldocena",
-    role: "Diseñador",
-    image: TomasMaldocena,
-  },
-  {
-    id: "2",
     name: "Luciano González",
     role: "Desarrollador",
     image: LucianoGonzalez,

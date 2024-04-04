@@ -5,12 +5,10 @@ import {
   secondInformation,
 } from "@/components/AboutUs";
 import { Separator } from "@/components/ui/separator";
-import { OverviewSplashes } from "./AboutUsSplashes";
 
 export const Overview = () => {
   return (
     <section className="mb-24 relative">
-      <OverviewSplashes />
       <h1 className="font-extralight text-3xl lg:text-5xl text-center lg:text-start mb-14">
         Compromiso con la excelencia
       </h1>
@@ -34,10 +32,10 @@ export const Overview = () => {
       <section className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:justify-around z-10 relative">
         {members.map(({ id, name, role, image }) => (
           <div
-            className="flex flex-col gap-3 items-center justify-center border border-[#FFF4E499]  bg-[#FFF4E466] p-8 rounded-lg"
+            className="flex flex-col gap-3 items-center justify-center bg-bento-gradient shadow-2xl p-8 rounded-lg"
             key={id}
           >
-            <Image src={image} alt={name} width={64} height={64} />
+            {/* <Image src={image} alt={name} width={64} height={64} /> */}
             <h1 className="text-2xl font-bold">{name}</h1>
             <p>{role}</p>
           </div>

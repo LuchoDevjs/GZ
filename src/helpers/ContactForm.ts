@@ -18,6 +18,8 @@ export const ContactSchema = z.object({
     .email("Por favor introduce un correo válido")
     .transform((email) => email.toLowerCase().trim()),
 
+  package: z.string().min(1, "Selecciona un Paquete"),
+
   query: z
     .string()
     .min(1, "Por favor, introduce tu consulta.")

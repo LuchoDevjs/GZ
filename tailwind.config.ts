@@ -12,11 +12,21 @@ const config = {
   theme: {
     extend: {
       colors: {
-        "custom-bg": "#FFF4E4",
-        primary: "#3D0E1E",
-        secondary: "#D1274B",
+        "custom-bg": "#0a0908",
+        primary: "#e5e5e5",
+        secondary: "#006ff0",
         accent: "#F88020",
+        "bg-card": "#343a40",
+        "border-card": "#fffdfd",
       },
+      backgroundImage: {
+        "hero-bg": "url('/assets/Hero/hero-bg.png')",
+        "bento-gradient":
+          "linear-gradient(160deg, rgba(23, 23, 23, 1) 0%, rgba(14, 14, 14, 1) 25%)",
+        blueLight:
+          "linear-gradient(90deg, #006ff0 0%, rgba(255, 255, 255, 0.75) 95% )",
+      },
+
       width: {
         custom: "80%",
       },
@@ -29,3 +39,5 @@ const config = {
 } satisfies Config;
 
 export default config;
+
+// "bg-card": "#F2E6D9",

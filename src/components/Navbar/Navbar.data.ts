@@ -11,7 +11,7 @@ export const dataNavbar = [
   },
   {
     id: "3",
-    item: "https://cdn.icon-icons.com/icons2/2845/PNG/512/starbucks_logo_icon_181356.png",
+    item: "/assets/LionLogo.png",
     link: "#",
   },
   {
