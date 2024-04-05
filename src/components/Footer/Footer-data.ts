@@ -6,7 +6,7 @@ export const dataFooter = [
   },
   {
     id: "2",
-    text: "Sobre Nosotros",
+    text: "Nosotros",
     link: "#aboutus",
   },
   {

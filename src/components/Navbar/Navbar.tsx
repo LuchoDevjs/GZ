@@ -6,7 +6,7 @@ import Logo from "../../../public/assets/LionLogo.png";
 export const Navbar = () => {
   return (
     <nav>
-      <section className="flex flex-row items-center justify-between py-2 hidden md:flex lg:flex">
+      <section className="flex flex-row items-center justify-between py-2 hidden md:flex lg:flex text-xl">
         {dataNavbar.map(({ id, item, link }) => (
           <Link key={id} href={link}>
             {id === "3" ? (

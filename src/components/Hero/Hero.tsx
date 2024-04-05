@@ -6,18 +6,19 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <>
-      <section className="flex flex-col-reverse lg:flex-col justify-between items-center my-16 lg:my-20 rounded-xl">
+      <section className="flex flex-col-reverse lg:flex-col justify-between items-center my-16 rounded-xl">
         <section className="relative">
           <div className="flex flex-col p-2">
-            <div className="flex flex-col gap-4 lg:gap-7 py-0 lg:py-6">
-              <h1 className="text-6xl text-center lg:text-8xl font-semibold degradedBlue bg-blueLight">
-                DevSign
+            <div className="flex flex-col gap-4 lg:gap-5 py-0 lg:py-6">
+              <p className="text-center font-extralight text-sm lg:text-xl tracking-[0.2em]">
+                SOMOS DEVSIGN
+              </p>
+              <h1 className="text-2xl text-center lg:text-5xl font-semibold degradedBlue bg-blueLight">
+                Desarrollamos tu web y diseño para potenciar tu presencia
+                online.
               </h1>
-              <h2 className="text-xl text-center lg:text-3xl font-extralight">
-                Llevá tu presencia al siguiente nivel
-              </h2>
             </div>
-            <div className="my-8 flex justify-center">
+            <div className="my-5 flex justify-center">
               <Link href="#packages" className="btn">
                 Empezár
               </Link>

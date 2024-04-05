@@ -28,7 +28,7 @@ const config = {
       },
 
       width: {
-        custom: "80%",
+        custom: "70%",
       },
     },
     fontFamily: {

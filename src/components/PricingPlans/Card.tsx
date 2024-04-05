@@ -16,7 +16,7 @@ export const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={`border rounded-lg ${border} p-6 relative z-10 bg-bento-gradient shadow-xl`}
+      className={`flex flex-col justify-between border rounded-lg ${border} p-6 bg-bento-gradient shadow-xl`}
     >
       <div className="flex flex-col gap-8">
         <div className="flex justify-start">
@@ -32,8 +32,8 @@ export const Card = ({
       <Separator className={`my-8 ${separatorColor}`} />
       <div className="mb-8 flex flex-col gap-3">
         {items.map((item, index) => (
-          <div key={index} className="flex flex-row gap-2 items-center">
-            <IconCheck color={item.iconColor} />
+          <div key={index} className="flex flex-row gap-2 ">
+            <IconCheck color={item.iconColor} className="w-[24px] h-[24px]" />
             <p className="text-sm lg:text-base">{item.text}</p>
           </div>
         ))}
@@ -43,7 +43,7 @@ export const Card = ({
           borderButton || ""
         } text-sm lg:text-base py-1 rounded-md w-full`}
       >
-        Text
+        Comienza ahora
       </button>
     </div>
   );

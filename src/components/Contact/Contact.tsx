@@ -133,9 +133,8 @@ export const Contact = () => {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="package1">Paquete 1</SelectItem>
-                      <SelectItem value="package2">Paquete 2</SelectItem>
-                      <SelectItem value="package3">Paquete 3</SelectItem>
+                      <SelectItem value="package1">Paquete Estandar</SelectItem>
+                      <SelectItem value="package2">Paquete Premium</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage className="text-secondary" />

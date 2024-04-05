@@ -27,7 +27,3 @@ body {
 .transition-hover {
   @apply transition-all duration-300 ease-in-out;
 }
-
-li {
-  @apply text-[#ffecd7d4] bg-[#fffdfd];
-}

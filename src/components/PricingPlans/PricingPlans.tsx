@@ -14,8 +14,7 @@ export const PricingPlans = () => {
           Estas son los principales paquetes que ofrecemos:
         </h2>
       </div>
-      <div className="grid lg:grid-cols-3 gap-5 relative">
-        {/* <PricingPlansSplash /> */}
+      <div className="flex flex-col md:flex-row lg:flex-row gap-5 relative">
         {dataCard.map((data) => (
           <Card key={data.id} {...data} />
         ))}
@@ -23,7 +22,7 @@ export const PricingPlans = () => {
 
       <p className="text-center mt-16">
         Si sentís que tu idea no se ajusta a ningún paquete, no dudes en
-        comentarlo y te ofrecemos el paquete adecuado para vos
+        comentarlo y te ofrecemos el paquete adecuado para vos.
       </p>
     </section>
   );
