@@ -31,7 +31,7 @@ export const Navbar = () => {
         <Link href="#/">
           <Image src={Logo} alt="Logo" height={90} width={90} />
         </Link>
-        <Link href="/contact">
+        <Link href="#contact">
           <p className="transition-hover hover:text-secondary text-xl">
             Contacto
           </p>
