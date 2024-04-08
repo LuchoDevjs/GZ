@@ -69,7 +69,7 @@ export const Contact = () => {
     >
       <motion.section
         variants={fadeIn("up", "tween", 0.1, 1)}
-        className="flex flex-col lg:flex-row justify-center lg:items-center gap-10 lg:gap-16 mb-24 bg-bento-gradient shadow-2xl rounded-2xl h-full rounded-s-2xl p-5 lg:p-24 relative"
+        className="flex flex-col lg:flex-row justify-center lg:items-center gap-10 lg:gap-16 mb-24 bg-bento-gradient rounded-2xl h-full p-5 lg:p-20"
         id="contact"
       >
         <div className="flex-1 flex flex-col justify-center items-center lg:justify-start lg:items-start">
@@ -86,10 +86,9 @@ export const Contact = () => {
             variants={textVariant(0.8)}
             className="mb-4 text-center lg:text-start"
           >
-            Estamos listos para discutir tus necesidades y cómo podemos ayudarte
-            a alcanzar tus objetivos, obtén una cotización personalizada para tu
-            proyecto. o si tenés alguna pregunta o consulta, no dudes en llenar
-            el formulario y estaremos encantados de ayudarte.
+            Exploramos tus necesidades y te ayudamos a alcanzar tus metas.
+            Solicitá tu cotización o enviá tus consultas completando el
+            formulario. Estamos aquí para asistirte.
           </motion.p>
         </div>
         <motion.div variants={textVariant(0.9)} className="flex-1">

@@ -16,7 +16,7 @@ export const Navbar = () => {
       viewport={{ once: false }}
       className="relative"
     >
-      <section className="flex flex-row items-center justify-between py-2 hidden md:flex lg:flex text-xl">
+      <section className="flex flex-row items-center justify-between py-2 hidden md:flex lg:flex text-lg">
         {dataNavbar.map(({ id, item, link }) => (
           <Link key={id} href={link}>
             {id === "3" ? (
@@ -29,10 +29,10 @@ export const Navbar = () => {
       </section>
       <section className="flex flex-row items-center justify-between py-2 lg:hidden md:hidden">
         <Link href="#/">
-          <Image src={Logo} alt="Logo" height={90} width={90} />
+          <Image src={Logo} alt="Logo" height={70} width={70} />
         </Link>
         <Link href="#contact">
-          <p className="transition-hover hover:text-secondary text-xl">
+          <p className="transition-hover hover:text-secondary text-lg">
             Contacto
           </p>
         </Link>

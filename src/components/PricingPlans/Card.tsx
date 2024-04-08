@@ -30,7 +30,7 @@ export const Card = ({
     >
       <motion.div
         variants={fadeIn("up", "tween", 0.1, 1)}
-        className={`flex flex-col justify-between border-[0.5px] rounded-xl ${border} p-6 bg-bento-gradient shadow-xl`}
+        className={`flex flex-col justify-between border-[0.5px] rounded-xl ${border} p-6 shadow-xl`}
       >
         <div className="flex flex-col gap-4">
           <div className="flex justify-start">

@@ -12,7 +12,7 @@ export const PricingPlans = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="flex flex-col justify-center mb-24 lg:max-w-[1200px] mx-auto relative"
+      className="flex flex-col justify-center mb-24 lg:max-w-[1200px] mx-auto"
       id="packages"
     >
       <div className="flex flex-col justify-center items-center gap-3 mb-16">
