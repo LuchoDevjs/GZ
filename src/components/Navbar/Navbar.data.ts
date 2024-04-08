@@ -1,13 +1,13 @@
 export const dataNavbar = [
   {
     id: "1",
-    item: "Nosotros",
-    link: "#aboutus",
+    item: "Inicio",
+    link: "#",
   },
   {
     id: "2",
-    item: "Demo",
-    link: "#demo",
+    item: "Nosotros",
+    link: "#aboutus",
   },
   {
     id: "3",

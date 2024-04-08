@@ -23,6 +23,8 @@ import {
   SelectValue,
 } from "../ui/select";
 import { IconBulb } from ".";
+import { motion } from "framer-motion";
+import { staggerContainer, fadeIn, textVariant } from "@/utils/motion";
 
 export const Contact = () => {
   const form = useForm<z.infer<typeof ContactSchema>>({
@@ -59,115 +61,142 @@ export const Contact = () => {
   }
 
   return (
-    <section
-      className="flex flex-col lg:flex-row justify-center lg:items-center gap-10 lg:gap-16 mb-24 bg-bento-gradient shadow-2xl rounded-2xl h-full rounded-s-2xl p-5 lg:p-24 relative"
-      id="contact"
+    <motion.section
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
     >
-      <div className="flex-1 flex flex-col justify-center items-center lg:justify-start lg:items-start">
-        <IconBulb color="#006ff0" />
-        <h1 className="text-5xl font-extralight my-5">Hablamos?</h1>
-        <p className="mb-4 text-center lg:text-start">
-          Estamos listos para discutir tus necesidades y cómo podemos ayudarte a
-          alcanzar tus objetivos, obtén una cotización personalizada para tu
-          proyecto. o si tenés alguna pregunta o consulta, no dudes en llenar el
-          formulario y estaremos encantados de ayudarte.
-        </p>
-      </div>
-      <div className="flex-1">
-        <Form {...form}>
-          <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="flex flex-col gap-4"
+      <motion.section
+        variants={fadeIn("up", "tween", 0.1, 1)}
+        className="flex flex-col lg:flex-row justify-center lg:items-center gap-10 lg:gap-16 mb-24 bg-bento-gradient shadow-2xl rounded-2xl h-full rounded-s-2xl p-5 lg:p-24 relative"
+        id="contact"
+      >
+        <div className="flex-1 flex flex-col justify-center items-center lg:justify-start lg:items-start">
+          <motion.div variants={textVariant(0.6)}>
+            <IconBulb color="#006ff0" />
+          </motion.div>
+          <motion.h1
+            variants={textVariant(0.7)}
+            className="text-5xl font-extralight my-5"
           >
-            <FormField
-              control={form.control}
-              name="fullname"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-xs"> Nombre y Apellido</FormLabel>
-                  <FormControl>
-                    <Input
-                      type="text"
-                      id="fullname"
-                      {...field}
-                      className="!mt-0 bg-transparent border border-primary"
-                    />
-                  </FormControl>
-                  <FormMessage className="text-secondary" />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-xs">Correo Electrónico</FormLabel>
-                  <FormControl>
-                    <Input
-                      type="email"
-                      id="email"
-                      {...field}
-                      className="!mt-0 bg-transparent border border-primary"
-                    />
-                  </FormControl>
-                  <FormMessage className="text-secondary" />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="package"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-xs">Paquete</FormLabel>
-                  <Select
-                    onValueChange={field.onChange}
-                    defaultValue={field.value}
-                  >
+            Hablamos?
+          </motion.h1>
+          <motion.p
+            variants={textVariant(0.8)}
+            className="mb-4 text-center lg:text-start"
+          >
+            Estamos listos para discutir tus necesidades y cómo podemos ayudarte
+            a alcanzar tus objetivos, obtén una cotización personalizada para tu
+            proyecto. o si tenés alguna pregunta o consulta, no dudes en llenar
+            el formulario y estaremos encantados de ayudarte.
+          </motion.p>
+        </div>
+        <motion.div variants={textVariant(0.9)} className="flex-1">
+          <Form {...form}>
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="flex flex-col gap-4"
+            >
+              <FormField
+                control={form.control}
+                name="fullname"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-sm">
+                      {" "}
+                      Nombre y Apellido
+                    </FormLabel>
                     <FormControl>
-                      <SelectTrigger className="!mt-0 bg-transparent border border-primary">
-                        <SelectValue placeholder="" />
-                      </SelectTrigger>
+                      <Input
+                        type="text"
+                        id="fullname"
+                        {...field}
+                        className="!mt-0 bg-transparent border border-primary"
+                      />
                     </FormControl>
-                    <SelectContent>
-                      <SelectItem value="package1">Paquete Estandar</SelectItem>
-                      <SelectItem value="package2">Paquete Premium</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <FormMessage className="text-secondary" />
-                </FormItem>
-              )}
-            />
+                    <FormMessage className="text-secondary" />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="query"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-xs">Tu consulta</FormLabel>
-                  <FormControl>
-                    <Textarea
-                      id="query"
-                      className="resize-none !mt-0 bg-transparent border border-primary"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage className="text-secondary" />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-sm">
+                      Correo Electrónico
+                    </FormLabel>
+                    <FormControl>
+                      <Input
+                        type="email"
+                        id="email"
+                        {...field}
+                        className="!mt-0 bg-transparent border border-primary"
+                      />
+                    </FormControl>
+                    <FormMessage className="text-secondary" />
+                  </FormItem>
+                )}
+              />
 
-            <div className="flex justify-center lg:justify-start">
-              <button className="btn" type="submit">
-                Enviar
-              </button>
-            </div>
-          </form>
-        </Form>
-      </div>
-    </section>
+              <FormField
+                control={form.control}
+                name="package"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-sm">Paquete</FormLabel>
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger className="!mt-0 bg-transparent border border-primary">
+                          <SelectValue placeholder="" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent className="bg-primary text-custom-bg">
+                        <SelectItem value="package1">
+                          Paquete Estandar
+                        </SelectItem>
+                        <SelectItem value="package2">
+                          Paquete Premium
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage className="text-secondary" />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="query"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-sm">Tu consulta</FormLabel>
+                    <FormControl>
+                      <Textarea
+                        id="query"
+                        className="resize-none !mt-0 bg-transparent border border-primary"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage className="text-secondary" />
+                  </FormItem>
+                )}
+              />
+
+              <div className="flex justify-center lg:justify-start">
+                <button className="btn" type="submit">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </Form>
+        </motion.div>
+      </motion.section>
+    </motion.section>
   );
 };

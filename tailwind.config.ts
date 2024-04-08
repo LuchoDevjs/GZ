@@ -25,10 +25,13 @@ const config = {
           "linear-gradient(160deg, rgba(23, 23, 23, 1) 0%, rgba(14, 14, 14, 1) 25%)",
         blueLight:
           "linear-gradient(90deg, #006ff0 0%, rgba(255, 255, 255, 0.75) 95% )",
+        blackLight:
+          "linear-gradient(90deg, #636363 0%, rgba(255, 255, 255, 0.75) 96% )",
       },
 
       width: {
         custom: "70%",
+        "custom-sm": "90%",
       },
     },
     fontFamily: {

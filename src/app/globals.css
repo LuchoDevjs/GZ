@@ -11,7 +11,7 @@ body {
 }
 
 ::selection {
-  background: #6de4e8;
+  background: #0070f044;
 }
 
 .degradedBlue {
@@ -21,9 +21,13 @@ body {
   padding: 5px 0;
 }
 .btn {
-  @apply bg-secondary text-primary rounded-full py-2 px-6 lg:px-9 font-normal hover:bg-[#0070f0d7] transition-hover;
+  @apply border border-secondary text-primary rounded-full py-2 px-6 lg:px-9 font-normal hover:bg-[#0070f027] transition-hover;
 }
 
 .transition-hover {
   @apply transition-all duration-300 ease-in-out;
+}
+
+li {
+  @apply text-[#e5e5e51d];
 }

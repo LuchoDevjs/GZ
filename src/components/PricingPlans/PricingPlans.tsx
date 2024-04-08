@@ -1,29 +1,39 @@
+"use client";
+
 import { Card, dataCard } from ".";
+import { TitleText, TypingText } from "../CustomTexts/CustomTexts";
+import { staggerContainer } from "@/utils/motion";
+import { motion } from "framer-motion";
 
 export const PricingPlans = () => {
   return (
-    <section
+    <motion.section
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
       className="flex flex-col justify-center mb-24 lg:max-w-[1200px] mx-auto relative"
       id="packages"
     >
       <div className="flex flex-col justify-center items-center gap-3 mb-16">
-        <h1 className="text-3xl text-center lg:text-5xl font-extralight">
-          Elige el plan que más te conviene
-        </h1>
-        <h2 className="text-sm lg:text-base text-center">
-          Estas son los principales paquetes que ofrecemos:
-        </h2>
+        <TitleText
+          title="Elige el plan que más te conviene"
+          className="text-3xl text-center lg:text-5xl font-extralight"
+        />
+
+        <TypingText title="| Principales paquetes que ofrecemos:" />
       </div>
-      <div className="flex flex-col md:flex-row lg:flex-row gap-5 relative">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:flex-row gap-5 relative">
         {dataCard.map((data) => (
           <Card key={data.id} {...data} />
         ))}
       </div>
 
-      <p className="text-center mt-16">
-        Si sentís que tu idea no se ajusta a ningún paquete, no dudes en
-        comentarlo y te ofrecemos el paquete adecuado para vos.
-      </p>
-    </section>
+      <TitleText
+        title="Si sentís que tu idea no se ajusta a ningún paquete, no dudes en
+        comentarlo y te ofrecemos el paquete adecuado para vos."
+        className="text-center mt-16"
+      />
+    </motion.section>
   );
 };

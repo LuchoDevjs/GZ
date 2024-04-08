@@ -1,16 +1,26 @@
+"use client";
+
 import Link from "next/link";
 import { dataNavbar } from ".";
 import Image from "next/image";
 import Logo from "../../../public/assets/LionLogo.png";
+import { motion } from "framer-motion";
+import { navVariants } from "@/utils/motion";
 
 export const Navbar = () => {
   return (
-    <nav>
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false }}
+      className="relative"
+    >
       <section className="flex flex-row items-center justify-between py-2 hidden md:flex lg:flex text-xl">
         {dataNavbar.map(({ id, item, link }) => (
           <Link key={id} href={link}>
             {id === "3" ? (
-              <Image src={item} alt="Logo" height={90} width={90} />
+              <Image src={item} alt="Logo" height={70} width={70} />
             ) : (
               <p className="transition-hover hover:text-secondary">{item}</p>
             )}
@@ -27,6 +37,6 @@ export const Navbar = () => {
           </p>
         </Link>
       </section>
-    </nav>
+    </motion.nav>
   );
 };

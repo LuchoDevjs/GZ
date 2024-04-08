@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { IconBrush, IconLaptop, IconPerson, dataAboutUs } from "./AboutUs.data";
+import { staggerContainer, textVariant } from "@/utils/motion";
+import { motion } from "framer-motion";
 
 const icons = [
   { id: "1", icon: IconLaptop, alt: "Icon Laptop" },
@@ -9,7 +13,13 @@ const icons = [
 
 export const Features = () => {
   return (
-    <section className="mb-24 relative">
+    <motion.section
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="mb-24 relative"
+    >
       <div>
         <div className="flex flex-row gap-3 justify-center mb-10">
           {icons.map(({ id, icon, alt }) => (
@@ -30,11 +40,16 @@ export const Features = () => {
             key={id}
             className="flex flex-col gap-5 px-3 py-5 rounded-lg bg-bento-gradient shadow-2xl"
           >
-            <h1 className="text-xl font-bold">{title}</h1>
-            <p>{description}</p>
+            <motion.h1
+              variants={textVariant(0.6)}
+              className="text-xl font-bold degradedBlue bg-blueLight"
+            >
+              {title}
+            </motion.h1>
+            <motion.p variants={textVariant(0.7)}>{description}</motion.p>
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };

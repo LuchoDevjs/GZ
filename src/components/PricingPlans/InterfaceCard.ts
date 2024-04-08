@@ -10,5 +10,7 @@ export interface CardProps {
   price: string;
   description: string;
   separatorColor: string;
+  bgPlan: string;
+  degraded: string;
   items: { iconColor: string; text: string }[];
 }

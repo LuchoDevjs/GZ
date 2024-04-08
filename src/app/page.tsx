@@ -11,13 +11,13 @@ import {
 export default function Home() {
   return (
     <>
-      <div className="w-custom mx-auto">
+      <div className="w-custom-sm md:w-custom lg:w-custom mx-auto">
         <Navbar />
         <Hero />
         <AboutUs />
       </div>
       {/* <Demo /> */}
-      <div className="w-custom mx-auto">
+      <div className="w-custom-sm md:w-custom lg:w-custom mx-auto">
         <PricingPlans />
         <Contact />
       </div>
