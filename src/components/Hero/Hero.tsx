@@ -26,7 +26,7 @@ export const Hero = () => {
             variants={textVariant(0.5)}
             className="text-2xl text-center lg:text-5xl font-semibold degradedBlue bg-gradient-blue-light"
           >
-            Desarrollamos tu web y diseño para potenciar tu presencia online.
+            Desarrollo tu web y diseño para potenciar tu presencia online.
           </motion.h1>
         </div>
       </motion.section>
