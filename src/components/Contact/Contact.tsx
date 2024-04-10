@@ -105,7 +105,7 @@ export const Contact = () => {
         <motion.div variants={textVariant(0.5)} className="flex-1">
           <div className="flex justify-center">
             <Link
-              href="https://web.whatsapp.com/send?phone=5491139240504&text=¡Hola!%20Estoy%20interesado/a%20en%20saber%20más%20sobre%20los%20servicios%20de%20páginas%20web%20que%20ofreces.%20¿Podrías%20proporcionarme%20más%20información?"
+              href="https://wa.me/5491139240504?text=¡Hola!%20Estoy%20interesado/a%20en%20saber%20más%20sobre%20los%20servicios%20de%20páginas%20web%20que%20ofreces.%20¿Podrías%20proporcionarme%20más%20información?"
               target="_blank"
               className="flex flex-row items-center gap-3 btn"
             >
