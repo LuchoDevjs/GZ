@@ -21,7 +21,7 @@ export const PricingPlans = () => {
           className="text-3xl text-center lg:text-5xl font-extralight"
         />
 
-        <TypingText title="| Principales paquetes que ofrecemos:" />
+        <TypingText title="| Principales paquetes:" />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:flex-row gap-5 relative">
         {dataCard.map((data) => (
@@ -31,7 +31,7 @@ export const PricingPlans = () => {
 
       <TitleText
         title="Si sentís que tu idea no se ajusta a ningún paquete, no dudes en
-        comentarlo y te ofrecemos el paquete adecuado para vos."
+        comentarlo y te ofreceré el paquete adecuado para vos."
         className="text-center mt-16"
       />
     </motion.section>

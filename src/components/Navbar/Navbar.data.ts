@@ -11,7 +11,7 @@ export const dataNavbar = [
   },
   {
     id: "3",
-    item: "/assets/LionLogo.png",
+    item: "/assets/Logo.png",
     link: "#",
   },
   {

@@ -17,7 +17,7 @@ export const navVariants = {
     transition: {
       type: "spring",
       stiffness: 80,
-      delay: 0.5,
+      delay: 0.3,
     },
   },
 };
@@ -121,6 +121,12 @@ export const fadeIn = (
     },
   },
 });
+
+export const messageVariants = {
+  initial: { opacity: 0, y: -20 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 20 },
+};
 
 export const footerVariants = {
   hidden: {

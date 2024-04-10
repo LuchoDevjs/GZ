@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { dataNavbar } from ".";
 import Image from "next/image";
-import Logo from "../../../public/assets/LionLogo.png";
+import Logo from "../../../public/assets/Logo.png";
 import { motion } from "framer-motion";
 import { navVariants } from "@/utils/motion";
 

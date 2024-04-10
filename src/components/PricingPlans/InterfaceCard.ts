@@ -12,5 +12,5 @@ export interface CardProps {
   separatorColor: string;
   bgPlan: string;
   degraded: string;
-  items: { iconColor: string; text: string }[];
+  items: { strikeThrough: boolean; text: string }[];
 }
