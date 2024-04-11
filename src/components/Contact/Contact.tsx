@@ -61,10 +61,10 @@ export const Contact = () => {
           "Content-Type": "application/x-www-form-urlencoded",
         },
       })
-      .then((response) => {
-        form.reset(); // Limpia el formulario después del envío exitoso
-        setIsSubmittedSuccessfully(true); // Actualiza el estado para mostrar el mensaje
-        setTimeout(() => setIsSubmittedSuccessfully(false), 5000);
+      .then(() => {
+        form.reset();
+        setIsSubmittedSuccessfully(true);
+        setTimeout(() => setIsSubmittedSuccessfully(false), 4000);
       })
       .catch((error) => {
         console.error("Error al enviar el formulario:", error);
@@ -173,8 +173,8 @@ export const Contact = () => {
                   <FormItem>
                     <FormLabel className="text-sm">Paquete</FormLabel>
                     <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
+                      onValueChange={(value) => form.setValue("package", value)}
+                      value={form.watch("package")}
                     >
                       <FormControl>
                         <SelectTrigger className="!mt-0 bg-transparent border border-light-opacity">
