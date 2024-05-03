@@ -12,6 +12,7 @@ export const Footer = () => {
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       className="flex flex-col justify-center w-width-custom mx-auto"
     >
       <section className="flex flex-col lg:flex-row justify-between items-center lg:items-start my-5">

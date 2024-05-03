@@ -12,7 +12,7 @@ export const Hero = () => {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className="flex flex-col justify-between items-center my-16"
       >
         <div className="flex flex-col gap-4 lg:gap-5 py-0 lg:py-20">
@@ -34,7 +34,7 @@ export const Hero = () => {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
       >
         <motion.div variants={textVariant(0.6)}>
           <Link href="#aboutus" className="flex justify-center mb-16 lg:mb-28">

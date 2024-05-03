@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Creación de Páginas Web - GZ",
   description:
     "Eleva tu negocio con nuestros servicios de diseño y desarrollo web. Soluciones eficaces y personalizadas para tu presencia en línea.",
+  icons: {
+    icon: "/assets/favicon.ico",
+  },
 };
 
 export default function RootLayout({

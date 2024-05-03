@@ -11,7 +11,7 @@ export const PricingPlans = () => {
       variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true }}
       className="flex flex-col justify-center mb-24 lg:max-w-[1200px] mx-auto"
       id="packages"
     >

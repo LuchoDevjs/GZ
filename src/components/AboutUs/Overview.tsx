@@ -11,7 +11,7 @@ export const Overview = () => {
       variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
     >
       <TypingText title="| Sobre Mi" className="mb-14" />
 
@@ -34,7 +34,6 @@ export const Overview = () => {
           <span className="font-bold">confianza</span> y el{" "}
           <span className="font-bold">éxito mutuo</span>.
         </p>
-        <IoIosArrowRoundDown size={35} />
       </motion.div>
     </motion.section>
   );

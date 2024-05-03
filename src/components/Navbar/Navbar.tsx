@@ -13,7 +13,7 @@ export const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className="relative"
     >
       <section className="flex flex-row items-center justify-between py-2 hidden md:flex lg:flex text-lg">

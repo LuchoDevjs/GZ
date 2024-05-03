@@ -21,6 +21,7 @@ export const TitleText = ({ title = "", className = "" }) => (
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
+    viewport={{ once: true }}
     className={className}
   >
     {title}
